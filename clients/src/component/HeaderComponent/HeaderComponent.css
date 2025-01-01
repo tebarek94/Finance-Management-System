@@ -1,0 +1,35 @@
+/* General styles for the header */
+.header-nav {
+  background-color: #333;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the unordered list (remove default list styles) */
+.header-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style each list item */
+.header-nav li {
+  margin: 0 15px;
+}
+
+/* Style the links */
+.header-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for links */
+.header-nav a:hover {
+  background-color: #575757;
+}

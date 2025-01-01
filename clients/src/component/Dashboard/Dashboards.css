@@ -1,0 +1,52 @@
+/* Set up a flex container for the dashboard layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #34495e;
+  padding: 5px;
+}
+
+/* Main content styling */
+.main-content {
+  flex-grow: 1; /* Take up the remaining space */
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+.main-content h1 {
+  color: #2c3e50;
+}
+
+.main-content p {
+  font-size: 18px;
+  color: #7f8c8d;
+}

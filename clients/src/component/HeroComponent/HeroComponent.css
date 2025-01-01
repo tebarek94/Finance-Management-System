@@ -1,0 +1,68 @@
+/* General styling for the Hero section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to right, #4f46e5, #6ee7b7); /* Gradient background */
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Heading styling */
+.hero-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph text styling */
+.hero-container p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Button container */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Button styling */
+.hero-buttons button {
+  background-color: #10b981; /* Green color */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons button:hover {
+  background-color: #059669; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight elevation effect */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
